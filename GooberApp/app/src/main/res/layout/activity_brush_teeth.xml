@@ -19,8 +19,10 @@
 
     <CalendarView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:id="@+id/calendarView" />
+        android:layout_height="145dp"
+        android:id="@+id/calendarView"
+        android:shownWeekCount="1"
+        android:showWeekNumber="false"/>
 
     <LinearLayout
         android:layout_width="wrap_content"
