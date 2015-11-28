@@ -8,6 +8,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -48,5 +49,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void dayBrush(View v) {
+        Button gray_sun = (Button) findViewById(R.id.day_Brush);
+        //if(gray_sun.getBackground(). R.drawable.sun_orange){
+           // gray_sun.getBackground(this.)
+        //} else {
+        int sdk = android.os.Build.VERSION.SDK_INT;
+            if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+                gray_sun.setBackgroundDrawable(this.getResources().getDrawable(R.drawable.sun_orange));
+            } else {
+                gray_sun.setBackground(this.getResources().getDrawable(R.drawable.sun_orange));
+
+            }
+
     }
 }
