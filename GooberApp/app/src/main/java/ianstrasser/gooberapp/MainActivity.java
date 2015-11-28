@@ -1,5 +1,6 @@
 package ianstrasser.gooberapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -11,6 +12,7 @@ import android.view.MenuItem;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+    Button btn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,14 +21,18 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        btn = (Button)findViewById(R.id.brushTeethBtn);
+        btn.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(), BrushTeethActivity.class);
+                startActivity(i);
             }
         });
+
+
     }
 
     @Override
@@ -50,32 +56,10 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
-
-    public void dayBrush(View v) {
-        Button gray_sun = (Button) findViewById(R.id.day_Brush);
-        Object tag = gray_sun.getTag();
-        int backgroundId = R.drawable.sun_grey;
-        if( tag != null && ((Integer)tag).intValue() == backgroundId) {
-            backgroundId = R.drawable.sun_orange;
-        } else {
-            backgroundId = R.drawable.sun_grey;
-        }
-        gray_sun.setTag(backgroundId);
-        gray_sun.setBackgroundResource(backgroundId);
+    public void sendMessage(View view){
+        Intent intent = new Intent(MainActivity.this, BrushTeethActivity.class);
+        startActivity(intent);
     }
-    /*
-    public void dayBrush(View v) {
-        Button gray_sun = (Button) findViewById(R.id.day_Brush);
-        //if(gray_sun.getBackground(). R.drawable.sun_orange){
-           // gray_sun.getBackground(this.)
-        //} else {
-        int sdk = android.os.Build.VERSION.SDK_INT;
-            if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {
-                gray_sun.setBackgroundDrawable(this.getResources().getDrawable(R.drawable.sun_orange));
-            } else {
-                gray_sun.setBackground(this.getResources().getDrawable(R.drawable.sun_orange));
 
-            }
 
-    }*/
 }

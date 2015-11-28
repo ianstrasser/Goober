@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">GooberApp</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_brush_teeth">BrushTeethActivity</string>
+    <string name="brushTeethToday">Did you brush your teeth today?</string>
+    <string name="trackProgress">Track your daily activities!</string>
+    <string name="brushTeeth">Brush Teeth</string>
+
+    <color name="red">#ff30</color>
 </resources>

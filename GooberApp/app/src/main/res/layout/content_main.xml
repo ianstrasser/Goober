@@ -16,24 +16,16 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Calendar" />
+        android:text="@string/trackProgress"
+        android:textColor="@color/red"
+        android:textSize="25dp"/>
 
-    <LinearLayout
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/sun_grey"
-            android:clickable="true"
-            android:onClick="dayBrush"
-            android:id="@+id/day_Brush"
-            android:src="@drawable/sun_grey"/>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+        android:layout_height="wrap_content"
+        android:text="@string/brushTeeth"
+        android:onClick="sendMessage"
+        android:id="@+id/brushTeethBtn"/>
+
 
 </LinearLayout>
