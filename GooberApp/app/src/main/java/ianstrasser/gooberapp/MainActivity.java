@@ -53,6 +53,19 @@ public class MainActivity extends AppCompatActivity {
 
     public void dayBrush(View v) {
         Button gray_sun = (Button) findViewById(R.id.day_Brush);
+        Object tag = gray_sun.getTag();
+        int backgroundId = R.drawable.sun_grey;
+        if( tag != null && ((Integer)tag).intValue() == backgroundId) {
+            backgroundId = R.drawable.sun_orange;
+        } else {
+            backgroundId = R.drawable.sun_grey;
+        }
+        gray_sun.setTag(backgroundId);
+        gray_sun.setBackgroundResource(backgroundId);
+    }
+    /*
+    public void dayBrush(View v) {
+        Button gray_sun = (Button) findViewById(R.id.day_Brush);
         //if(gray_sun.getBackground(). R.drawable.sun_orange){
            // gray_sun.getBackground(this.)
         //} else {
@@ -64,5 +77,5 @@ public class MainActivity extends AppCompatActivity {
 
             }
 
-    }
+    }*/
 }
