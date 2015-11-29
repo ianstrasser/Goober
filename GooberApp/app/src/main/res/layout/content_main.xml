@@ -19,13 +19,65 @@
         android:text="@string/trackProgress"
         android:textColor="@color/red"
         android:textSize="25dp"/>
-
-    <Button
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/brushTeeth"
-        android:onClick="sendMessage"
-        android:id="@+id/brushTeethBtn"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendMessage"
+                android:id="@+id/brushTeethBtn"
+                android:background="@drawable/toothbrush_purple"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendFloss"
+                android:id="@+id/flossBtn"
+                android:background="@drawable/floss_purple"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendShower"
+                android:id="@+id/showerBtn"
+                android:background="@drawable/shower_purple"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendWashFace"
+                android:id="@+id/washFaceBtn"
+                android:background="@drawable/washface_purple"
+                />
 
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendLostTooth"
+                android:id="@+id/lostToothBtn"
+                android:background="@drawable/losttooth_purple"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="sendHomework"
+                android:id="@+id/homeworkBtn"
+                android:background="@drawable/homework_purple"/>
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
