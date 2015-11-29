@@ -53,6 +53,46 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ianstrasser.gooberapp.MainActivity" />
         </activity>
+        <activity
+            android:name=".FlossActivity"
+            android:label="@string/title_activity_floss"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShowerActivity"
+            android:label="@string/title_activity_shower"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WashFaceActivity"
+            android:label="@string/title_activity_wash_face"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LostToothActivity"
+            android:label="@string/title_activity_lost_tooth"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HomeworkActivity"
+            android:label="@string/title_activity_homework"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
