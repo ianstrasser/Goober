@@ -1,5 +1,6 @@
 package ianstrasser.gooberapp;
 
+import android.content.ClipData;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -13,6 +14,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
     Button btn;
+    ClipData.Item about;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
     }
 
     @Override
@@ -50,8 +50,25 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
+
+        /*if(id == R.id.action_share) {
+            Intent i = new Intent(getApplicationContext(), ShareActivity.class);
+            startActivity(i);
+        }*/
+
+        if(id == R.id.action_feedback) {
+            Intent i = new Intent(getApplicationContext(), FeedbackActivity.class);
+            startActivity(i);
+        }
+
+        if (id == R.id.action_about) {
+            Intent i = new Intent(getApplicationContext(), AboutActivity.class);
+            startActivity(i);
+        }
+
         if (id == R.id.action_settings) {
-            return true;
+            Intent i = new Intent(getApplicationContext(), SettingsActivity.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);

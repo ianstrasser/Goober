@@ -8,6 +8,11 @@
     <string name="brushTeethToday">Did you brush your teeth today?</string>
     <string name="trackProgress">Track your daily activities!</string>
     <string name="brushTeeth">Brush Teeth</string>
+    <string name="iconAttribution">Moon and Sun icons made by IconWorks from Flaticon are
+        licensed under Creative Commons by 3.0.</string>
 
     <color name="red">#ff30</color>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
 </resources>
