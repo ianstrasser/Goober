@@ -18,14 +18,14 @@
         android:textSize="25dp"/>
 
 
-    <CalendarView
-        android:layout_width="match_parent"
-        android:layout_height="90dp"
-        android:id="@+id/calendarView"
-        android:shownWeekCount="1"
-        android:showWeekNumber="false"
-        android:layoutDirection="ltr"
-        android:layout_weight="0.20" />
+    <!--<CalendarView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="90dp"-->
+        <!--android:id="@+id/calendarView"-->
+        <!--android:shownWeekCount="1"-->
+        <!--android:showWeekNumber="false"-->
+        <!--android:layoutDirection="ltr"-->
+        <!--android:layout_weight="0.20" />-->
 
     <LinearLayout
         android:layout_width="wrap_content"
