@@ -24,6 +24,9 @@ public class BrushTeethActivity extends AppCompatActivity {
         //setActionBar(myToolbar);
 
     }
+    public void weekCalendar() {
+        //calendarView.changeDisplayMode(CalendarDisplayMode.Year, true);
+    }
 
     public void dayBrush(View v) {
         Button sun = (Button) findViewById(R.id.day_Brush);

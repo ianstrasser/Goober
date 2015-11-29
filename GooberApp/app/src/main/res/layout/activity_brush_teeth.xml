@@ -8,7 +8,8 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="ianstrasser.gooberapp.BrushTeethActivity">
+    tools:context="ianstrasser.gooberapp.BrushTeethActivity"
+    android:weightSum="1">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,10 +20,12 @@
 
     <CalendarView
         android:layout_width="match_parent"
-        android:layout_height="145dp"
+        android:layout_height="90dp"
         android:id="@+id/calendarView"
         android:shownWeekCount="1"
-        android:showWeekNumber="false"/>
+        android:showWeekNumber="false"
+        android:layoutDirection="ltr"
+        android:layout_weight="0.20" />
 
     <LinearLayout
         android:layout_width="wrap_content"
