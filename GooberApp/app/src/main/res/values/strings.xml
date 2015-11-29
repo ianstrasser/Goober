@@ -8,6 +8,8 @@
     <string name="brushTeethToday">Did you brush your teeth today?</string>
     <string name="trackProgress">Track your daily activities!</string>
     <string name="brushTeeth">Brush Teeth</string>
+    <string name="timer">Timer</string>
+    <string name="startTimer">Start Timer</string>
 
     <color name="red">#ff30</color>
 </resources>
