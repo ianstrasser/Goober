@@ -12,9 +12,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 
+import com.firebase.client.DataSnapshot;
+import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
+
 public class MainActivity extends AppCompatActivity {
     Button btn;
     ClipData.Item about;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -75,6 +81,26 @@ public class MainActivity extends AppCompatActivity {
     }
     public void sendMessage(View view){
         Intent intent = new Intent(MainActivity.this, BrushTeethActivity.class);
+        startActivity(intent);
+    }
+    public void sendFloss(View view){
+        Intent intent = new Intent(MainActivity.this, FlossActivity.class);
+        startActivity(intent);
+    }
+    public void sendShower(View view){
+        Intent intent = new Intent(MainActivity.this, ShowerActivity.class);
+        startActivity(intent);
+    }
+    public void sendWashFace(View view){
+        Intent intent = new Intent(MainActivity.this, WashFaceActivity.class);
+        startActivity(intent);
+    }
+    public void sendLostTooth(View view){
+        Intent intent = new Intent(MainActivity.this, LostToothActivity.class);
+        startActivity(intent);
+    }
+    public void sendHomework(View view){
+        Intent intent = new Intent(MainActivity.this, HomeworkActivity.class);
         startActivity(intent);
     }
 

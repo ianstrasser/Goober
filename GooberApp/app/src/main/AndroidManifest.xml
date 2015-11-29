@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="ianstrasser.gooberapp">
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -49,6 +50,46 @@
             android:label="@string/title_activity_settings"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".FlossActivity"
+            android:label="@string/title_activity_floss"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".ShowerActivity"
+            android:label="@string/title_activity_shower"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".WashFaceActivity"
+            android:label="@string/title_activity_wash_face"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".LostToothActivity"
+            android:label="@string/title_activity_lost_tooth"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="ianstrasser.gooberapp.MainActivity" />
+        </activity>
+        <activity
+            android:name=".HomeworkActivity"
+            android:label="@string/title_activity_homework"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="ianstrasser.gooberapp.MainActivity" />

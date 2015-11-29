@@ -23,6 +23,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:paddingTop="25dp"
         android:gravity="center_horizontal">
         <LinearLayout
             android:layout_width="wrap_content"
@@ -31,12 +32,14 @@
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
                 android:onClick="sendMessage"
                 android:id="@+id/brushTeethBtn"
                 android:background="@drawable/toothbrush_purple"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
                 android:onClick="sendFloss"
                 android:id="@+id/flossBtn"
                 android:background="@drawable/floss_purple"/>
@@ -44,12 +47,14 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:onClick="sendShower"
                 android:id="@+id/showerBtn"
+                android:layout_marginRight="25dp"
                 android:background="@drawable/shower_purple"
                 />
             <Button
@@ -57,6 +62,7 @@
                 android:layout_height="wrap_content"
                 android:onClick="sendWashFace"
                 android:id="@+id/washFaceBtn"
+                android:layout_marginLeft="25dp"
                 android:background="@drawable/washface_purple"
                 />
 
@@ -64,16 +70,19 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:paddingTop="20dp">
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="25dp"
                 android:onClick="sendLostTooth"
                 android:id="@+id/lostToothBtn"
                 android:background="@drawable/losttooth_purple"/>
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
                 android:onClick="sendHomework"
                 android:id="@+id/homeworkBtn"
                 android:background="@drawable/homework_purple"/>

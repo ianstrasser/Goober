@@ -5,7 +5,7 @@
     <string name="action_feedback">Feedback</string>
     <string name="action_share">Share</string>
     <string name="title_activity_brush_teeth">BrushTeethActivity</string>
-    <string name="brushTeethToday">Did you brush your teeth today?</string>
+    <string name="brushTeethToday">Did you brush once during the day and once during the night?</string>
     <string name="trackProgress">Track your daily activities!</string>
     <string name="brushTeeth">Brush Teeth</string>
     <string name="timer">Timer</string>
@@ -32,4 +32,14 @@
     <string name="title_activity_about">AboutActivity</string>
     <string name="title_activity_feedback">FeedbackActivity</string>
     <string name="title_activity_settings">SettingsActivity</string>
+    <string name="title_activity_floss">FlossActivity</string>
+    <string name="title_activity_shower">ShowerActivity</string>
+    <string name="title_activity_wash_face">WashFaceActivity</string>
+    <string name="title_activity_lost_tooth">LostToothActivity</string>
+    <string name="title_activity_homework">HomeworkActivity</string>
+    <string name="floss">Did you floss today?</string>
+    <string name="shower">Did you take a shower today?</string>
+    <string name="washFace">Make sure you wash your face with soap!</string>
+    <string name="lostTooth">Track how many teeth you lost!</string>
+    <string name="homework">Check off your completed homework assignments:</string>
 </resources>
